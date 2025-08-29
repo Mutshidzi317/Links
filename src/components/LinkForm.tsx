@@ -1,6 +1,6 @@
 // components/LinkForm.tsx
 import React, { useState, useEffect } from 'react';
-import './LinkForm.module.css';
+import styles from './LinkForm.module.css';
 
 interface Link {
   id: string;
@@ -57,7 +57,7 @@ export const LinkForm: React.FC<LinkFormProps> = ({ onSubmit, editingLink }) => 
   };
 
   return (
-    <form className="link-form" onSubmit={handleSubmit}>
+    <form className={styles['link-form']} onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Title"

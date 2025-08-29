@@ -1,31 +1,50 @@
 /* LinkForm.css */
 .link-form {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .link-form input,
 .link-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.link-form input:focus,
+.link-form textarea:focus {
+  border-color: #6366f1;
+  outline: none;
 }
 
 .link-form button {
-  background: #3498db;
-  color: white;
+  background: #6366f1;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
 .link-form button:hover {
-  background: #2980b9;
+  background: #4f46e5;
+}
+
+.center-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6; /* Optional: subtle background */
 }
